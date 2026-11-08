@@ -62,3 +62,7 @@ python -m topodyn --duration 2 --output output
 Tests check analytic linear solutions, known stability classifications, index signs, the Hopf radius, known linear Lyapunov exponents, invalid inputs, and CLI exports. GitHub Actions runs tests and an installed CLI smoke test on Python 3.10, 3.12, and 3.13.
 
 See [examples/hopf.py](examples/hopf.py) for a parameter sweep without the CLI. Licensed under Apache 2.0; see [LICENSE](LICENSE).
+
+## ResearchOS / TECT assurance layer
+
+This repository includes the shared v0.1 research controller, a scoped executable domain pilot, replayable evidence/decision bundles, adversarial regression probes, and explicit unassured outcomes. See [the workflow](docs/RESEARCHOS.md), [versioned semantics](docs/TECT_SPEC.md), and [research-program traceability](docs/TECT_RESEARCH_PLAN.md). Existing domain results retain their documented limits. No claim state authorizes external or clinical execution.
