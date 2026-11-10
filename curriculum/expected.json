@@ -1,0 +1,114 @@
+{
+  "case_count": 8,
+  "cases": [
+    {
+      "actual": "SCHUR_STABLE",
+      "case": "strict Schur stability",
+      "expected": "SCHUR_STABLE",
+      "passed": true
+    },
+    {
+      "actual": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/4",
+          "1/4"
+        ]
+      ],
+      "case": "exact trajectory",
+      "expected": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/4",
+          "1/4"
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "actual": [
+        [
+          "4/3",
+          "0"
+        ],
+        [
+          "0",
+          "4/3"
+        ]
+      ],
+      "case": "Lyapunov solution for A=I/2",
+      "expected": [
+        [
+          "4/3",
+          "0"
+        ],
+        [
+          "0",
+          "4/3"
+        ]
+      ],
+      "passed": true
+    },
+    {
+      "actual": [
+        "0",
+        "0",
+        "0"
+      ],
+      "case": "exact residual",
+      "expected": [
+        "0",
+        "0",
+        "0"
+      ],
+      "passed": true
+    },
+    {
+      "actual": "CRITICAL_OR_NONDECAYING",
+      "case": "identity is boundary, not strict stability",
+      "expected": "CRITICAL_OR_NONDECAYING",
+      "passed": true
+    },
+    {
+      "actual": [
+        "3",
+        "1"
+      ],
+      "case": "Jordan boundary can grow",
+      "expected": [
+        "3",
+        "1"
+      ],
+      "passed": true
+    },
+    {
+      "actual": "UNSTABLE",
+      "case": "unstable diagonal",
+      "expected": "UNSTABLE",
+      "passed": true
+    },
+    {
+      "actual": "ValueError",
+      "case": "floating coefficients rejected",
+      "expected": "ValueError",
+      "passed": true
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Synthetic curriculum checks only",
+  "status": "PASS"
+}
