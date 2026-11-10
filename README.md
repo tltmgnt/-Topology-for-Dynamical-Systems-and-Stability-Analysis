@@ -1,5 +1,14 @@
 # Exact linear discrete-time stability
 
+<!-- research-workbench:start -->
+## Research workbench
+
+[Open this repository's private workbench](https://tltmgnt-topology-for-dynamical-systems-and-stability-ana.troturn31.chatgpt.site) · [All repository workbenches](https://tltmgnt-research-workbenches.troturn31.chatgpt.site)
+
+The hosted interface requires ChatGPT sign-in and access to the private Site. It supports browser-local research records, evidence fingerprints and workspace export. It is a prototype: no live AI model or repository backend is connected, and it does not establish external validation.
+<!-- research-workbench:end -->
+
+
 Working offline Python research prototype. **Exact rational 2x2 discrete-time linear maps x(t+1)=A x(t). Jury margins classify strict Schur stability. Solve A^T P A-P=-I with rational elimination and check P positive definite. Critical/boundary results do not assert boundedness. No continuous-time, nonlinear, uncertain-parameter or physical stability claim.**
 
 ## Run
