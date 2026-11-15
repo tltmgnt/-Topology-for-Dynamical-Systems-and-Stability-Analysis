@@ -1,0 +1,20 @@
+{
+  "case_count": 8,
+  "command": "python curriculum/lab.py --verify",
+  "exit_code": 0,
+  "expected_sha256": "088f61e7e8fa215389c0680b6307faee20e97bcf30a887d78fdb63b442f0b636",
+  "lab_sha256": "acdfa7a769c34c7f8dff6942af59b5071f3dd4180646ea4848415b6934e9182b",
+  "python": "3.12.14",
+  "repository": "tltmgnt/-Topology-for-Dynamical-Systems-and-Stability-Analysis",
+  "schema_version": 1,
+  "scope": "Local synthetic curriculum validation on the recorded source snapshot; not complete repository CI, learning outcomes, independent scientific reproduction or deployment approval",
+  "source_and_fixture_sha256": {
+    "dynamics_topology/__init__.py": "43cdaf67e2e75f83059d9c36bf13af6ce81eeb455d4ef3ecdfb6255de5a650a3",
+    "dynamics_topology/__main__.py": "074f8a2b6e016acb5e9bde12809ff6652b45f06bfc802eb784ae9160e97282ac",
+    "dynamics_topology/analysis.py": "c8509ec527907e7b543b6d3c30524f271701737f82249f0e45bd54c683ffe628",
+    "dynamics_topology/io.py": "a2c9daca91107ad0dc0996d0fcdc53c0d288fb7f6b96508a9d75a257216bfb02",
+    "examples/reference.json": "43dc601c0cd9d51b9d7c29b2032258aed93ef277779b33e961c9e863d1435174"
+  },
+  "source_base_commit": "13ad895aaa2fff503f98efea35d9f79b465e2ff6",
+  "wrong_expectation_exit_code": 1
+}

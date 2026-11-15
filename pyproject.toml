@@ -1,22 +1,18 @@
 [build-system]
-requires = ["setuptools>=68"]
-build-backend = "setuptools.build_meta"
-
+requires=["setuptools>=68"]
+build-backend="setuptools.build_meta"
 [project]
-name = "topodyn"
-version = "0.1.0"
-description = "Planar dynamical systems, stability, and topological index exploration"
-readme = "README.md"
-requires-python = ">=3.10"
-license = {text = "Apache-2.0"}
-dependencies = []
-
+name="dynamics-topology"
+version="0.1.0"
+requires-python=">=3.10"
+description="Exact linear discrete-time stability with replayable research evidence"
+readme="README.md"
+license={text="Apache-2.0"}
 [project.scripts]
-researchos = "researchos.__main__:main"
-topodyn = "topodyn.__main__:main"
-
+topodyn="topodyn.__main__:main"
+dynamics-topology="dynamics_topology.__main__:main"
+researchos="researchos.__main__:main"
 [tool.setuptools.packages.find]
-include = ["topodyn*", "researchos*"]
-
+include=["topodyn*","dynamics_topology*","researchos*"]
 [tool.setuptools.package-data]
-researchos = ["*.json"]
+researchos=["*.json"]

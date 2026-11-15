@@ -1,13 +1,8 @@
-"""Repository-specific executable pilot; limited to the stated software assertion."""
-import math
-from topodyn import simulate, system, winding_index
-
+"""Executable synthetic domain adapter, not independent scientific reproduction."""
+from dynamics_topology import analyze
+DATA={'schema_version': 1, 'matrix': [['1/2', '0'], ['0', '1/3']], 'initial': ['1', '1'], 'steps': 8}
 
 def check():
-    field=system('hopf',1)
-    final=simulate(field,(0.2,0),20)[-1]
-    radius=math.hypot(*final[1:]); index=winding_index(field)
-    return {'domain':'dynamical-systems','statement':'The synthetic Hopf implementation approaches radius 1 and has sampled index +1 under this configuration.',
-            'passed':abs(radius-1)<1e-5 and abs(index-1)<1e-8,
-            'configuration':{'mu':1,'duration':20,'dt':0.01,'initial':[0.2,0]},
-            'observed':{'radius':radius,'index':index},'scope':'Finite numerical software check, not a stability proof'}
+    result=analyze(DATA)
+    return {'domain':result['domain'],'statement':'The supplied synthetic exact linear discrete-time stability fixture satisfies its declared reference checks.','passed':bool(result["classification"]=="SCHUR_STABLE" and result["lyapunov_certificate"]["positive_definite"]),
+            'configuration':DATA,'observed':result,'scope':'Exact rational 2x2 discrete-time linear maps x(t+1)=A x(t). Jury margins classify strict Schur stability. Solve A^T P A-P=-I with rational elimination and check P positive definite. Critical/boundary results do not assert boundedness. No continuous-time, nonlinear, uncertain-parameter or physical stability claim.'}
