@@ -33,3 +33,5 @@ jobs:
           path: runs/reference/
           retention-days: 7
           if-no-files-found: error
+      - run: topodyn --duration 2 --output output
+      - run: python -c "from topodyn.domain import check; assert check()['passed']"

@@ -1,5 +1,5 @@
 [build-system]
-requires=["setuptools>=61"]
+requires=["setuptools>=68"]
 build-backend="setuptools.build_meta"
 [project]
 name="dynamics-topology"
@@ -9,9 +9,10 @@ description="Exact linear discrete-time stability with replayable research evide
 readme="README.md"
 license={text="Apache-2.0"}
 [project.scripts]
+topodyn="topodyn.__main__:main"
 dynamics-topology="dynamics_topology.__main__:main"
 researchos="researchos.__main__:main"
 [tool.setuptools.packages.find]
-include=["dynamics_topology*","researchos*"]
+include=["topodyn*","dynamics_topology*","researchos*"]
 [tool.setuptools.package-data]
 researchos=["*.json"]
